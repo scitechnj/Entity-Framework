@@ -1,0 +1,29 @@
+USE [PersonDb]
+GO
+
+/****** Object:  Table [dbo].[Cars]    Script Date: 1/30/2014 10:29:09 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Cars](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Make] [varchar](50) NULL,
+	[Model] [varchar](50) NULL,
+	[Year] [date] NULL,
+ CONSTRAINT [PK_Cars] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
